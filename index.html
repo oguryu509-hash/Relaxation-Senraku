@@ -73,6 +73,33 @@ h2 {
 }
 
 /* ------------------------------
+   予約ボタン
+------------------------------*/
+.reserve-buttons {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.reserve-buttons a {
+  display: block;
+  margin: 12px auto;
+  padding: 16px 24px;
+  width: 80%;
+  max-width: 320px;
+  background: #8b5a2b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.reserve-buttons a:hover {
+  opacity: 0.8;
+}
+
+/* ------------------------------
    メニューカード
 ------------------------------*/
 .menu-list {
@@ -96,6 +123,23 @@ h2 {
 .menu-item h3 {
   margin-top: 0;
   color: #4a3b2a;
+}
+
+/* ------------------------------
+   口コミ
+------------------------------*/
+.review-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-top: 20px;
+}
+
+.stars {
+  color: #d4a017;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
 /* ------------------------------
@@ -146,6 +190,18 @@ setInterval(() => {
 </script>
 
 <!-- ==============================
+     予約ボタン
+============================== -->
+<section>
+  <h2>ご予約</h2>
+
+  <div class="reserve-buttons">
+    <a href="https://beauty.hotpepper.jp/kr/slnH000726172/" target="_blank">ホットペッパーで予約する</a>
+    <a href="tel:080-4187-6888">📞 電話で予約する（080-4187-6888）</a>
+  </div>
+</section>
+
+<!-- ==============================
      メニュー
 ============================== -->
 <section>
@@ -175,6 +231,19 @@ setInterval(() => {
 </section>
 
 <!-- ==============================
+     口コミ
+============================== -->
+<section>
+  <h2>お客様の声</h2>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <p>「素晴らしかったです！マッサージの後にどれだけ体が軽くなっているか、本来の身体の身軽さになっているかを重視して色々なところに行きますが、ここはとても良かったです。定期的に通いたいと思います」</p>
+    <p style="text-align:right; opacity:0.7;">— Google レビューより</p>
+  </div>
+</section>
+
+<!-- ==============================
      アクセス
 ============================== -->
 <section>
@@ -194,3 +263,4 @@ setInterval(() => {
 
 </body>
 </html>
+
